@@ -1,23 +1,24 @@
-//Holds qunatity and unit together.
-public class Quantity {
+//Holds quantity and unit together.
+
+public class Measurement {
     private final double quantity;
     private final MeasurementUnit unit;
 
-    public Quantity(double quantity, MeasurementUnit unit) {
+    public Measurement(double quantity, MeasurementUnit unit) {
         this.quantity = quantity;
         this.unit = unit;
     }
 
-    public static Quantity inch(double value) {
-        return new Quantity(value, MeasurementUnit.INCH);
+    public static Measurement inch(double value) {
+        return new Measurement(value, MeasurementUnit.INCH);
     }
 
-    public static Quantity foot(double value) {
-        return new Quantity(value, MeasurementUnit.FOOT);
+    public static Measurement foot(double value) {
+        return new Measurement(value, MeasurementUnit.FOOT);
     }
 
-    public static Quantity centimeter(double value) {
-        return new Quantity(value, MeasurementUnit.CENTIMETER);
+    public static Measurement centimeter(double value) {
+        return new Measurement(value, MeasurementUnit.CENTIMETER);
     }
 
     private double baseValue() {
@@ -31,7 +32,7 @@ public class Quantity {
 
         if ((other == null) || other.getClass() != getClass()) return false;
 
-        final Quantity otherQuantity = ((Quantity) other);
+        final Measurement otherQuantity = ((Measurement) other);
         return baseValue() == otherQuantity.baseValue();
 
 //        if (Double.compare(otherQuantity.quantity, quantity) != 0) return false;
