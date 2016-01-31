@@ -24,4 +24,9 @@ public class MeasurementTest {
         Measurement twoCentimeter = Measurement.centimeter(12);
         assertFalse(oneInch.equals(twoCentimeter));
     }
+
+    @Test
+    public void checkVolumeEquality(){
+//        Measurement oneLitre = Measurement.litre(1);
+    }
 }

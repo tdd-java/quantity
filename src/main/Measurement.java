@@ -21,6 +21,10 @@ public class Measurement {
         return new Measurement(value, MeasurementUnit.CENTIMETER);
     }
 
+    public static Measurement litre(double value) {
+        return new Measurement(value, MeasurementUnit.LITRE);
+    }
+
     private double baseValue() {
         return this.unit.baseValue(this.quantity);
     }
@@ -57,5 +61,4 @@ public class Measurement {
         result = 31 * result + (unit != null ? unit.hashCode() : 0);
         return result;
     }
-
 }
