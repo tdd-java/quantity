@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class QuantityTest {
@@ -15,5 +16,12 @@ public class QuantityTest {
         Quantity thirtyCentimeter =Quantity.centimeter(30.48);
         Quantity oneFoot = Quantity.foot(1);
         assertTrue(thirtyCentimeter.equals(oneFoot));
+    }
+
+    @Test
+    public void testFalse(){
+        Quantity oneInch = Quantity.inch(1);
+        Quantity twoCentimeter = Quantity.centimeter(12);
+        assertFalse(oneInch.equals(twoCentimeter));
     }
 }
