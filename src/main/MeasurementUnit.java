@@ -1,3 +1,5 @@
+//While creating unit, it specifies value in base unit
+
 public class MeasurementUnit {
 
     private final double baseValueInInch;

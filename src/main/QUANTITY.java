@@ -1,3 +1,4 @@
+//Holds qunatity and unit together.
 public class Quantity {
     private final double quantity;
     private final MeasurementUnit unit;
