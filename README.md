@@ -1,2 +1,2 @@
-1. 12 Inch = 1 feet
-2. 100 CM = 1 meter
+1. 12 Inch = 1 Foot
+2. 100 Centimeter = 1 Meter
