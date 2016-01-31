@@ -4,7 +4,7 @@ public class MeasurementUnit {
 
     private final double baseValueInInch;
 
-    public MeasurementUnit(double baseValueInInch) {
+    private MeasurementUnit(double baseValueInInch) {
         this.baseValueInInch = baseValueInInch;
     }
 
