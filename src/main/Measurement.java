@@ -25,6 +25,10 @@ public class Measurement {
         return new Measurement(value, MeasurementUnit.LITRE);
     }
 
+    public static Measurement mililitre(double value) {
+        return new Measurement(value, MeasurementUnit.MILILITRE);
+    }
+
     private double baseValue() {
         return this.unit.baseValue(this.quantity);
     }

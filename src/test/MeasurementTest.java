@@ -27,6 +27,6 @@ public class MeasurementTest {
 
     @Test
     public void checkVolumeEquality(){
-//        Measurement oneLitre = Measurement.litre(1);
+        Measurement oneLitre = Measurement.litre(1);
     }
 }
